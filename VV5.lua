@@ -602,7 +602,7 @@ function OrionLib:MakeWindow(WindowConfig)
 	local MainWindow = AddThemeObject(SetChildren(SetProps(MakeElement("RoundFrame", Color3.fromRGB(255, 255, 255), 0, 10), {
 		Parent = Orion,
 		Position = UDim2.new(0.5, -307, 0.5, -172),
-		Size = UDim2.new(0, 290, 0, 180),
+		Size = UDim2.new(0, 400, 0, 200),
 		ClipsDescendants = true
 	}), {
 		--SetProps(MakeElement("Image", "rbxassetid://3523728077"), {
