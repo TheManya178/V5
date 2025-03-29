@@ -613,24 +613,24 @@ function OrionLib:MakeWindow(WindowConfig)
 		--	ImageTransparency = 0.7
 		--}),
 		SetChildren(SetProps(MakeElement("TFrame"), {
-			Size = UDim2.new(1, 0, 0, 50),
+			Size = UDim2.new(0, 433, 0, 30),
 			Name = "TopBar"
 		}), {
 			WindowName,
 			WindowTopBarLine,
 			AddThemeObject(SetChildren(SetProps(MakeElement("RoundFrame", Color3.fromRGB(255, 255, 255), 0, 7), {
-    Size = UDim2.new(0, 70, 0, 30),
-    Position = UDim2.new(1, -90, 0, 10)
-}), {
-    AddThemeObject(MakeElement("Stroke"), "Stroke"),
-    AddThemeObject(SetProps(MakeElement("Frame"), {
-        Size = UDim2.new(0, 1, 1, 0),
-        Position = UDim2.new(0.5, 0, 0, 0),
-        BackgroundTransparency = 0  -- يمكن تعديل الشفافية حسب الحاجة
-    }), "Stroke"), 
-    CloseBtn,
-    MinimizeBtn
-}), "Second")
+				Size = UDim2.new(0, 70, 0, 30),
+				Position = UDim2.new(1, -90, 0, 10)
+			}), {
+				AddThemeObject(MakeElement("Stroke"), "Stroke"),
+				AddThemeObject(SetProps(MakeElement("Frame"), {
+					Size = UDim2.new(0, 1, 1, 0),
+					Position = UDim2.new(0.5, 0, 0, 0)
+				}), "Stroke"), 
+				CloseBtn,
+				MinimizeBtn
+			}), "Second"), 
+		}),
 		DragPoint,
 		WindowStuff
 	}), "Main")
