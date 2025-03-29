@@ -626,6 +626,7 @@ function OrionLib:MakeWindow(WindowConfig)
 				AddThemeObject(SetProps(MakeElement("Frame"), {
 					Size = UDim2.new(0, 1, 1, 0),
 					Position = UDim2.new(0.5, 0, 0, 0)
+					BackgroundTransparency = 1
 				}), "Stroke"), 
 				CloseBtn,
 				MinimizeBtn
@@ -650,8 +651,8 @@ function OrionLib:MakeWindow(WindowConfig)
 		MainWindow.Visible = false
 		UIHidden = true
 		OrionLib:MakeNotification({
-			Name = "Interface Hidden",
-			Content = "Tap RightShift to reopen the interface",
+			Name = "look ui",
+			Content = "It has been closed permanently.",
 			Time = 5
 		})
 		WindowConfig.CloseCallback()
@@ -858,7 +859,7 @@ function OrionLib:MakeWindow(WindowConfig)
 				ButtonConfig = ButtonConfig or {}
 				ButtonConfig.Name = ButtonConfig.Name or "Button"
 				ButtonConfig.Callback = ButtonConfig.Callback or function() end
-				ButtonConfig.Icon = ButtonConfig.Icon or "rbxassetid://3944703587"
+				ButtonConfig.Icon = ButtonConfig.Icon or "rbxassetid://18280363338"
 
 				local Button = {}
 
