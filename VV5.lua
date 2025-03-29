@@ -613,7 +613,7 @@ function OrionLib:MakeWindow(WindowConfig)
 		--	ImageTransparency = 0.7
 		--}),
 		SetChildren(SetProps(MakeElement("TFrame"), {
-			Size = UDim2.new(0, 433, 0, 30),
+			Size = UDim2.new(1, 0, 0, 50),
 			Name = "TopBar"
 		}), {
 			WindowName,
