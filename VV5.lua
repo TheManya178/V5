@@ -619,17 +619,17 @@ function OrionLib:MakeWindow(WindowConfig)
 			WindowName,
 			WindowTopBarLine,
 			AddThemeObject(SetChildren(SetProps(MakeElement("RoundFrame", Color3.fromRGB(255, 255, 255), 0, 7), {
-				Size = UDim2.new(0, 70, 0, 30),
-				Position = UDim2.new(1, -90, 0, 10)
-			}), {
-				AddThemeObject(MakeElement("Stroke"), "Stroke"),
-				AddThemeObject(SetProps(MakeElement("Frame", {
-    Size = UDim2.new(0, 1, 1, 0),
-    Position = UDim2.new(0.5, 0, 0, 0),
-    BackgroundTransparency = 1  -- خلفية شفافة (مع إبقاء الأزرار ظاهرة)
-}), "Stroke"), 
-CloseBtn,
-MinimizeBtn
+    Size = UDim2.new(0, 70, 0, 30),
+    Position = UDim2.new(1, -90, 0, 10)
+}), {
+    AddThemeObject(MakeElement("Stroke"), "Stroke"),
+    AddThemeObject(SetProps(MakeElement("Frame"), {
+        Size = UDim2.new(0, 1, 1, 0),
+        Position = UDim2.new(0.5, 0, 0, 0),
+        BackgroundTransparency = 0  -- يمكن تعديل الشفافية حسب الحاجة
+    }), "Stroke"), 
+    CloseBtn,
+    MinimizeBtn
 }), "Second")
 		DragPoint,
 		WindowStuff
